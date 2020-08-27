@@ -14,6 +14,13 @@ $(document).keydown(function(){
   }
 });
 
+$(".startButton").click(function(){
+  if (gameActive == false){
+    gameActive = true;
+    $(".startButton").css("visibility","hidden");
+    nextSequence();
+  }
+});
 
 function nextSequence(){
   // clearing userClickedPattern because user have to follow the sequence all over again
@@ -59,6 +66,7 @@ function checkAnswer(currentLevel){
       }, 200);
 
 // After gameOver setting game Status to False and clearing the gamePattern
+$(".startButton").css("visibility","visible");
       gameActive = false;
       gamePattern = [];
       level = 0;

@@ -26,6 +26,14 @@ body {
   border-radius: 20%;
 }
 
+.startButton {
+  height: 100px;
+  width: 200px;
+  border: 5px solid black;
+  background-color: #fa5109;
+  font-size: 2rem;
+  font-weight: bold;
+}
 .gameOver {
   background-color: red;
   opacity: 0.8;
